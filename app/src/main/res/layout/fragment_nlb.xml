@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222222"
+    tools:context="com.kianncs.softwareengineering_libraryapp.Fragments.AmazonFragment">
+
+    <include layout="@layout/app_bar_drawer"
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutNLBFragment"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/appBar"
+        android:background="#222222"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <EditText
+            android:id="@+id/searchNLBFragmentQuery"
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:background="@drawable/rounded_edittext"
+            android:layout_marginTop="10dp"
+            android:layout_centerInParent="true"
+            android:paddingLeft="5dp"
+            android:inputType="textCapSentences|textAutoCorrect"
+            android:imeOptions="actionDone"
+            android:drawableLeft="@drawable/ic_search2"
+            android:hint ="Search Here"
+            android:enabled="false"
+            />
+
+        <Button
+            android:id="@+id/bRightNLB"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/next"
+            android:layout_toRightOf="@+id/searchNLBFragmentQuery"
+            />
+
+        <Button
+            android:id="@+id/bLeftNLB"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/back"
+            android:layout_toLeftOf="@+id/searchNLBFragmentQuery"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imAlertNLB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/alert"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/imAlertNLB"
+        android:text="Sorry ! Service Unavilable"
+        android:textColor="#ffff"
+        android:gravity="center"
+        />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ListViewNLBFragment"
+        android:layout_below="@+id/relativeLayoutNLBFragment"
+        android:clickable="true"/>
+
+
+
+</RelativeLayout>

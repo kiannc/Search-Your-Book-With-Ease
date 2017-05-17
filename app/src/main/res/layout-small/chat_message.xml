@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/imLogoChatRoom"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/collaboration"
+        />
+
+    <TextView
+        android:id="@+id/tvShowUsernameChat"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@+id/imLogoChatRoom"
+        android:textColor="#fff"
+        android:hint="username"
+        android:textColorHint="#fff"
+        android:textSize="30dp"
+        android:paddingLeft="10dp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e6af2e"
+        android:layout_above="@+id/recycler_comments"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        android:id="@+id/btn_send"
+        android:textColor="#fff"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/msg_input"
+        android:layout_alignTop="@+id/btn_send"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/btn_send"
+        android:layout_toStartOf="@+id/btn_send"
+        android:textColor="#fff"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_comments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/item_comment"
+        android:layout_above="@+id/btn_send"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imLogoChatRoom" />
+</RelativeLayout>

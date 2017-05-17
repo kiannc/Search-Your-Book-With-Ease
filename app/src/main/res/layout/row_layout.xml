@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="#222222">
+
+    <ImageView
+        android:id="@+id/bookImages"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/book2color"/>
+
+    <TextView
+        android:id="@+id/bookTitles"
+        android:layout_width="175dp"
+        android:layout_height="120dp"
+        android:layout_toRightOf="@+id/bookImages"
+        android:text="Book Title"
+        android:textColor="#ffff"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/bookPrice"
+        android:layout_width="175dp"
+        android:layout_height="120dp"
+        android:layout_toRightOf="@+id/bookTitles"
+        android:text="Price"
+        android:textColor="#ffff"
+        android:gravity="center"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ffff"
+        android:layout_below="@+id/bookImages"
+        />
+
+
+
+</RelativeLayout>
+
+
+
+
+

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_bookSearch"
+            android:icon="@drawable/book"
+            android:title="National Library " />
+        <item
+            android:id="@+id/nav_AmazonSearch"
+            android:icon="@drawable/amazon"
+            android:title="Amazon" />
+        <item
+            android:id="@+id/nav_EbaySearch"
+            android:icon="@drawable/ebay"
+            android:title="Ebay" />
+
+        <item
+            android:id="@+id/nav_transaction"
+            android:icon="@drawable/ic_search2"
+            android:title="Search Posts" />
+
+        <item
+            android:id="@+id/nav_myPost"
+            android:icon="@drawable/handshake"
+            android:title="My Posts" />
+
+        <item
+            android:id="@+id/nav_myChat"
+            android:icon="@drawable/chat"
+            android:title="My Chats" />
+    </group>
+
+
+    <item android:title="Administrative">
+        <menu>
+            <item
+                android:id="@+id/nav_manageAccount"
+                android:icon="@drawable/person"
+                android:title="User Profile" />
+
+            <item
+                android:id="@+id/nav_changePassword"
+                android:icon="@drawable/key"
+                android:title="Change Password" />
+
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/logout"
+                android:title="Logout" />
+        </menu>
+    </item>
+</menu>

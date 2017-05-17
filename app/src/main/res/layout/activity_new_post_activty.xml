@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222">
+
+    <EditText
+        android:id="@+id/field_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:textColorHint="#fff"
+        android:hint="Title"
+        android:textColor="#fff"
+        android:maxLines="1"
+        android:imeOptions="actionNext"
+        android:inputType="textCapSentences|textAutoCorrect"/>
+
+    <EditText
+        android:id="@+id/field_author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/field_title"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:hint="Author"
+        android:textColorHint="#fff"
+        android:textColor="#fff"
+        android:maxLines="1"
+        android:imeOptions="actionNext"
+        android:inputType="textCapSentences|textAutoCorrect"/>
+
+    <EditText
+        android:id="@+id/field_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/field_author"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:hint="Price"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:maxLines="1"
+        android:imeOptions="actionNext"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/field_condition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/field_price"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:hint="Condition"
+        android:textColorHint="#fff"
+        android:textColor="#fff"
+        android:maxLines="1"
+        android:imeOptions="actionDone"
+        android:inputType="textCapSentences|textAutoCorrect"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_submit_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textColor="#fff"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_navigation_check_24"/>
+
+</RelativeLayout>

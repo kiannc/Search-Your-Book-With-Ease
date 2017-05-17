@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#222222"
+    tools:context="com.kianncs.softwareengineering_libraryapp.Activity.RegisterActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/etName"
+        android:hint="Full Name"
+        android:imeOptions="actionNext"
+        android:maxLines="1"
+        android:inputType="textCapSentences|textAutoCorrect"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/rounded_edittext"
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/imageView"
+        android:layout_alignLeft="@+id/etEmailRegister"
+        android:layout_alignStart="@+id/etEmailRegister" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/etEmailRegister"
+        android:hint="Email"
+        android:maxLines="1"
+        android:inputType="textEmailAddress"
+        android:imeOptions="actionNext"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/rounded_edittext"
+        android:layout_below="@+id/etName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:maxLines="1"
+        android:imeOptions="actionNext"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:id="@+id/etPasswordRegister"
+        android:background="@drawable/rounded_edittext"
+        android:layout_below="@+id/etEmailRegister"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_alignLeft="@+id/etEmailRegister"
+        android:layout_alignStart="@+id/etEmailRegister" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:inputType="number"
+        android:ems="10"
+        android:maxLines="1"
+        android:hint="Mobile No."
+        android:imeOptions="actionDone"
+        android:id="@+id/etMobileNoRegister"
+        android:background="@drawable/rounded_edittext"
+        android:layout_below="@+id/etPasswordRegister"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_alignLeft="@+id/etPasswordRegister"
+        android:layout_alignStart="@+id/etPasswordRegister" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/test2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="REGISTER !"
+        android:id="@+id/bReg"
+        android:background="@drawable/rounded_button"
+        android:layout_below="@+id/etMobileNoRegister"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_alignLeft="@+id/etMobileNoRegister"
+        android:layout_alignStart="@+id/etMobileNoRegister" />
+
+
+</RelativeLayout>

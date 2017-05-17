@@ -1,0 +1,15 @@
+<resources>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <!-- This is the color of the Toolbar
+        <item name="colorPrimary">@color/primary</item>
+        &lt;!&ndash; This is the color of the Status bar &ndash;&gt;
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        &lt;!&ndash; The Color of the Status bar &ndash;&gt;
+        <item name="statusBarColor">@color/primary_dark</item>-->
+    </style>
+</resources>

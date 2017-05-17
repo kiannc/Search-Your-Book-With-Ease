@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "93523822648",
+    "firebase_url": "https://sedatabase-cbe58.firebaseio.com",
+    "project_id": "sedatabase-cbe58",
+    "storage_bucket": "sedatabase-cbe58.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:93523822648:android:2c09739850cf4ef1",
+        "android_client_info": {
+          "package_name": "com.example.jaden.test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "93523822648-icni0sb7rpcd6put31ndlbu9br2rhfq5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbQBwBwhkoaz2agd9dBR29Z0vPj_EHPSE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:93523822648:android:9682748371a53222",
+        "android_client_info": {
+          "package_name": "com.kianncs.softwareengineering_libraryapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "93523822648-icni0sb7rpcd6put31ndlbu9br2rhfq5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbQBwBwhkoaz2agd9dBR29Z0vPj_EHPSE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

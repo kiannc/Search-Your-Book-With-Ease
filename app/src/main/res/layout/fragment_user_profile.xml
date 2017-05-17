@@ -1,0 +1,134 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222222"
+    tools:context="com.kianncs.softwareengineering_libraryapp.Fragments.AmazonFragment">
+
+    <include layout="@layout/app_bar_drawer"
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:id="@+id/linearLayoutEbayFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appBar"
+        android:background="#222222"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/imageView"
+            android:src="@drawable/test2" />
+
+        <EditText
+            android:id="@+id/etFullNameUserProfile"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/rounded_edittext"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_below="@+id/imageView"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:inputType="text"
+            android:maxLines="1"
+            android:imeOptions="actionDone"
+            />
+        <ProgressBar
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/progressBarUserProfileFullName"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/imageView"
+            android:indeterminateDrawable="@drawable/circular"
+            android:max="100"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:progress="20"/>
+
+        <EditText
+            android:id="@+id/etEmailUserProfile"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/rounded_edittext"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_below="@+id/etFullNameUserProfile"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:maxLines="1"
+            android:inputType="text"
+            android:imeOptions="actionDone"/>
+
+        <ProgressBar
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/progressBarUserProfileEmail"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/etFullNameUserProfile"
+            android:indeterminateDrawable="@drawable/circular"
+            android:max="100"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:progress="20"
+            />
+
+
+        <EditText
+            android:id="@+id/etMobileNoUserProfile"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/rounded_edittext"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_below="@+id/etEmailUserProfile"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLines="1"
+            android:imeOptions="actionDone"
+            />
+
+        <ProgressBar
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/progressBarUserProfileMobieNo"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/etEmailUserProfile"
+            android:indeterminateDrawable="@drawable/circular"
+            android:max="100"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:progress="20"/>
+
+        <Button
+            android:id="@+id/buttonUserProfile"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_below="@+id/etMobileNoUserProfile"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_button"
+            android:text="UPDATE !"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
