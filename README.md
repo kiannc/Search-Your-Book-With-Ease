@@ -10,10 +10,10 @@
   This is a school project, CE2006 i did with my friends, the application is just only a protoype so there might be some bugs in the application.
   
   The Team Members:
-  1. Kian Ann
-  2. Yao Kang
-  3. Chun Kiat
-  4. Yong Qin
+  1. Kian Ann (Front End)
+  2. Yao Kang (Back End)
+  3. Chun Kiat (Front End)
+  4. Yong Qin (Back End)
 </p>
 
 ## A brief description of the application
